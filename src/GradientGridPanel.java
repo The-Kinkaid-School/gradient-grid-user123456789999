@@ -83,7 +83,18 @@ public class GradientGridPanel extends JPanel
         boolean[] used = new boolean[GRID_SIZE * GRID_SIZE];
 
         //TODO: you write this method.
-        return false;
+        //checking if every color is used
+        for (int r=0; r<GRID_SIZE; r++){
+            for (int c=0; c<GRID_SIZE; c++){
+                used[myGrid[r][c]]=true;
+            }
+        }
+        for (int i=0; i<used.length; i++){
+            if(!used[i]){
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
