@@ -91,7 +91,25 @@ public class GradientGridPanel extends JPanel
         }
         for (int i=0; i<used.length; i++){
             if(!used[i]){
+                System.out.println(STR."Failed because \{i} wasn't used");
                 return false;
+            }
+        }
+        //checking if the next number is adjacent
+        for (int r=0; r<GRID_SIZE; r++){
+            for (int c=0; c<GRID_SIZE; c++){
+                boolean isAdjacent = false;
+                for (int i=-1; i<2; i++){
+                    for (int j=-1; j<2; j++){
+                        if ((isInBounds(r+i,c+j) && myGrid[r+i][c+j]==myGrid[r][c]+1)||myGrid[r][c]==255){
+                            isAdjacent = true;
+                        }
+                    }
+                }
+                if (!isAdjacent){
+                    System.out.println(STR."Failed at \{r}, \{c}.");
+                    return false;
+                }
             }
         }
         return true;
@@ -138,6 +156,15 @@ public class GradientGridPanel extends JPanel
                 counter++;
             }
         }
+    }
+    private boolean isInBounds(int r, int c){
+        if(r<0||r>GRID_SIZE-1){
+            return false;
+        }
+        if(c<0||c>GRID_SIZE-1){
+            return false;
+        }
+        return true;
     }
 
     /**
