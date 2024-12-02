@@ -134,6 +134,7 @@ public class GradientGridPanel extends JPanel
                 break;
             case 3:
                 // TODO write code for case 2, either here or in its own method.
+                case3();
                 break;
             case 4:
                 // TODO write code for case 3, either here or in its own method.
@@ -206,6 +207,27 @@ public class GradientGridPanel extends JPanel
                 {194,195,198,199,202,203,206,207,210,211,214,215,218,219,222,223},
                 {253,252,249,248,245,244,241,240,237,236,233,232,229,228,225,224},
                 {255,254,251,250,247,246,243,242,239,238,235,234,231,230,227,226}};
+    }
+    private void case3(){
+        int counter = 0;
+        for (int r = 0; r < GRID_SIZE; r++)
+        {
+            if (r%2==0){
+                for (int c=0; c<GRID_SIZE; c++)
+                {
+                    myGrid[r][c] = counter;
+                    counter++;
+                }
+            }
+            else{
+                for (int c=GRID_SIZE-1; c>=0; c--)
+                {
+                    myGrid[r][c] = counter;
+                    counter++;
+                }
+            }
+
+        }
     }
 
 
