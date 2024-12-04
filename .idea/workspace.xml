@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a23e66c-010e-40e6-b64b-1f45d21b353d" name="Changes" comment="not sure what workspace.xml is">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradientGridPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradientGridPanel.java" afterDir="false" />
-    </list>
+    <list default="true" id="4a23e66c-010e-40e6-b64b-1f45d21b353d" name="Changes" comment="I made case 3 so that it goes from top to bottom and left to right when the row is even but right to left when the row is odd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,13 +109,22 @@
       <option name="project" value="LOCAL" />
       <updated>1733160365886</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I made case 3 so that it goes from top to bottom and left to right when the row is even but right to left when the row is odd">
+      <option name="closed" value="true" />
+      <created>1733161308474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733161308474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I wrote confirmGridMeetsSpecifications() to check if every number is used" />
     <MESSAGE value="I wrote confirmGridMeetsSpecifications() to check if every number has the next number adjacent. I also wrote isInBounds(r, c) so it checks whether a spot is within the bounds of the grid" />
     <MESSAGE value="not sure what workspace.xml is" />
-    <option name="LAST_COMMIT_MESSAGE" value="not sure what workspace.xml is" />
+    <MESSAGE value="I made case 3 so that it goes from top to bottom and left to right when the row is even but right to left when the row is odd" />
+    <option name="LAST_COMMIT_MESSAGE" value="I made case 3 so that it goes from top to bottom and left to right when the row is even but right to left when the row is odd" />
   </component>
 </project>
